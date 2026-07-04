@@ -13,6 +13,10 @@ import SignupPage from './pages/SignupPage'
 import { TourProvider } from './tour/TourContext'
 import TourOverlay from './tour/TourOverlay'
 
+import ChallengePage from './pages/ChallengePage'
+import ContestPage from './pages/ContestPage'
+import CommunityPage from './pages/CommunityPage'
+import PostPage from './pages/PostPage'
 import UsernameSetupPage from './pages/UsernameSetupPage'
 import { Toaster } from "react-hot-toast";
 function ThemedToaster() {
@@ -54,6 +58,7 @@ export default function App() {
                 <Route path="/challenges" element={<ChallengePage />} />
                 <Route path="/contest/:id" element={<ContestPage />} />
                 <Route path="/community" element={<CommunityPage />} />
+                <Route path="/community/post/:id" element={<PostPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
 
             </Routes>
